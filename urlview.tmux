@@ -15,4 +15,5 @@ readonly key="$(get_tmux_option "@urlview-key" "u")"
 
 tmux bind-key "$key" capture-pane \\\; \
   save-buffer /tmp/tmux-buffer \\\; \
+  delete-buffer \\\; \
   split-window -l 10 "urlview /tmp/tmux-buffer"
