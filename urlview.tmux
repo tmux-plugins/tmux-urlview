@@ -13,7 +13,7 @@ get_tmux_option() {
 
 readonly key="$(get_tmux_option "@urlview-key" "u")"
 
-tmux bind-key "$key" capture-pane \\\; \
+tmux bind-key "$key" capture-pane -J \\\; \
   save-buffer "${TMPDIR:-/tmp}/tmux-buffer" \\\; \
   delete-buffer \\\; \
   split-window -l 10 "urlview '${TMPDIR:-/tmp}/tmux-buffer'"
