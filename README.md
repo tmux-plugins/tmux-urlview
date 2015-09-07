@@ -23,7 +23,7 @@ In any tmux mode:
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
-    set -g @plugin 'jbnicolai/tmux-fpp'
+    set -g @plugin 'jbnicolai/tmux-urlview'
 
 
 Hit `prefix + I` to fetch the plugin and source it. You should now be able to
@@ -48,14 +48,14 @@ You should now be able to use the plugin.
 
 ### Configuration
 
-> How can I change the default "i" key binding to something else? For example,
+> How can I change the default "u" key binding to something else? For example,
 > key "x"?
 
 Put `set -g @urlview-key 'x'` in `tmux.conf`.
 
 ### Other goodies
 
-`tmux-open` works great with:
+`tmux-urlview` works great with:
 
 - [tmux-fpp](https://github.com/jbnicolai/tmux-fpp) - a plugin for
   opening any files on your terminal window
