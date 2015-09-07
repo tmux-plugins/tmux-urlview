@@ -23,7 +23,7 @@ In any tmux mode:
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
-    set -g @plugin 'jbnicolai/tmux-urlview'
+    set -g @plugin 'tmux-plugins/tmux-urlview'
 
 
 Hit `prefix + I` to fetch the plugin and source it. You should now be able to
@@ -33,7 +33,7 @@ use the plugin.
 
 Clone the repo:
 
-    $ git clone https://github.com/jbnicolai/tmux-urlview ~/clone/path
+    $ git clone https://github.com/tmux-plugins/tmux-urlview ~/clone/path
 
 Add this line to the bottom of `.tmux.conf`:
 
@@ -57,7 +57,7 @@ Put `set -g @urlview-key 'x'` in `tmux.conf`.
 
 `tmux-urlview` works great with:
 
-- [tmux-fpp](https://github.com/jbnicolai/tmux-fpp) - a plugin for
+- [tmux-fpp](https://github.com/tmux-plugins/tmux-fpp) - a plugin for
   opening any files on your terminal window
 - [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) - a plugin for
   regex searches in tmux and fast match selection
