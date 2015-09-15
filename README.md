@@ -1,8 +1,8 @@
 # Tmux urlview
 
-Plugin wrapper around [urlview](https://github.com/sigpipe/urlview).
-
 Quickly open any url on your terminal window!
+
+Plugin wrapper around either [urlview](https://github.com/sigpipe/urlview) or [extract_url](http://www.memoryhole.net/~kyle/extract_url/).
 
 ### Demo
 
@@ -10,13 +10,16 @@ Quickly open any url on your terminal window!
 
 ### Dependencies
 
+*One* of the following is required.
+
 - `urlview` - `brew install urlview` on OS X.
+- `extract_url` - `brew install extract_url` on OS X.
 
 ### Key bindings
 
 In any tmux mode:
 
-- `u` - "urlview" for a side-panel listing all urls
+- `u` - listing all urls on bottom pane
 
 
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
@@ -37,7 +40,7 @@ Clone the repo:
 
 Add this line to the bottom of `.tmux.conf`:
 
-    run-shell ~/clone/path/open.tmux
+    run-shell ~/clone/path/urlview.tmux
 
 Reload TMUX environment:
 
