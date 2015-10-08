@@ -1,6 +1,6 @@
 # Tmux urlview
 
-Plugin wrapper around [urlview](https://github.com/sigpipe/urlview).
+Plugin wrapper around [urlview](https://github.com/sigpipe/urlview), which must be installed already.
 
 Quickly open any url on your terminal window!
 
