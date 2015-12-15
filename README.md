@@ -56,6 +56,13 @@ You should now be able to use the plugin.
 
 Put `set -g @urlview-key 'x'` in `tmux.conf`.
 
+> How can I reverse the order of the URLs?
+
+The program which is used to read the contents of the pane into the URL
+extractor defaults to `cat`, but is configurable. To reverse the order, read
+the contents with `tac` by placing `set -g @urlview-reader 'tac'` in
+`tmux.conf`.
+
 ### Other goodies
 
 `tmux-urlview` works great with:

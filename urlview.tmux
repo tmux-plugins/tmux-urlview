@@ -20,9 +20,10 @@ find_executable() {
 }
 
 readonly key="$(get_tmux_option "@urlview-key" "u")"
+readonly reader="$(get_tmux_option "@urlview-reader" "cat")"
 readonly cmd="$(find_executable)"
 
 tmux bind-key "$key" capture-pane -J \\\; \
   save-buffer "${TMPDIR:-/tmp}/tmux-buffer" \\\; \
   delete-buffer \\\; \
-  split-window -l 10 "$cmd '${TMPDIR:-/tmp}/tmux-buffer'"
+  split-window -l 10 "$reader '${TMPDIR:-/tmp}/tmux-buffer' | $cmd"
