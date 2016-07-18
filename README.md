@@ -2,7 +2,7 @@
 
 Quickly open any url on your terminal window!
 
-Plugin wrapper around either [urlview](https://github.com/sigpipe/urlview) or [extract_url](http://www.memoryhole.net/~kyle/extract_url/).
+Plugin wrapper around either [urlview](https://github.com/sigpipe/urlview),  [extract_url](http://www.memoryhole.net/~kyle/extract_url/), or [urlscan](https://github.com/firecat53/urlscan)
 
 ### Demo
 
@@ -14,6 +14,7 @@ Plugin wrapper around either [urlview](https://github.com/sigpipe/urlview) or [e
 
 - `urlview` - `brew install urlview` on OS X.
 - `extract_url` - `brew install extract_url` on OS X.
+- `urlscan`
 
 ### Key bindings
 
