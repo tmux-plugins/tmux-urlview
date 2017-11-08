@@ -28,5 +28,5 @@ else
   tmux bind-key "$key" capture-pane -J \\\; \
     save-buffer "${TMPDIR:-/tmp}/tmux-buffer" \\\; \
     delete-buffer \\\; \
-    split-window -l 10 "$cmd '${TMPDIR:-/tmp}/tmux-buffer'"
+    split-window -l 10 "$cmd '${TMPDIR:-/tmp}/tmux-buffer'; rm '${TMPDIR:-/tmp}/tmux-buffer'"
 fi
