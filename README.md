@@ -1,3 +1,6 @@
+# prg318 fork information
+This fork adds compatibility for urlscan to the tmux urlview plugin
+
 # Tmux urlview
 
 Quickly open any url on your terminal window!
