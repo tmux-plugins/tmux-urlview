@@ -56,6 +56,15 @@ You should now be able to use the plugin.
 
 Put `set -g @urlview-key 'x'` in `tmux.conf`.
 
+> How can I use the default program FOO to get URLs explicitly?
+
+Put `set -g @urlview-extractor 'FOO'` in `tmux.conf`. The default is
+`urlview` if available, or `extract_url`.
+
+> But I want to run FOO with command-line arguments '-a bar --b baz'!
+
+Fine. Use `set -g @urlview-extractor 'FOO -a bar --b baz'`.
+
 ### Other goodies
 
 `tmux-urlview` works great with:
