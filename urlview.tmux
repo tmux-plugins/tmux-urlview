@@ -21,12 +21,13 @@ find_executable() {
 
 readonly key="$(get_tmux_option "@urlview-key" "u")"
 readonly cmd="$(find_executable)"
+readonly temp_file="$(mktemp --tmpdir tmux-urlview.XXX)"
 
 if [ -z "$cmd" ]; then
   tmux display-message "Failed to load tmux-urlview: neither urlview nor extract_url were found on the PATH"
 else
   tmux bind-key "$key" capture-pane -J \\\; \
-    save-buffer "${TMPDIR:-/tmp}/tmux-buffer" \\\; \
+    save-buffer "$temp_file" \\\; \
     delete-buffer \\\; \
-    split-window -l 10 "$cmd '${TMPDIR:-/tmp}/tmux-buffer'"
+    split-window -l 10 "$cmd '$temp_file'; rm '$temp_file' "
 fi
